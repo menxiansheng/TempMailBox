@@ -1,110 +1,110 @@
-# TempMailBox 臨時郵箱助手 📬
+# TempMailBox 临时邮箱助手 📬
 
-**TempMailBox** 是一個基於 **.NET 6 (WPF)** 與 **MVVM 架構** 開發的現代化 Windows 桌面版臨時郵箱客戶端。透過整合 [Mail.tm](https://mail.tm/) 的免費 API 服務，讓您無需註冊即可快速生成一次性臨時電郵，避免個人主郵箱收到垃圾郵件或被追蹤。
+**TempMailBox** 是一个基于 **.NET 6 (WPF)** 与 **MVVM 架构** 开发的现代化 Windows 桌面端临时邮箱客户端。通过整合 [Mail.tm](https://mail.tm/) 的免费 API 服务，让您无需注册即可快速生成一次性临时电子邮件账号，避免个人主邮箱收到垃圾邮件或被追踪。
 
 ---
 
 ## ✨ 主要功能
 
-- ⚡ **一鍵生成臨時郵箱**：自動獲取可用域名並生成隨機安全的臨時電子郵件帳號。
-- 📋 **快速複製地址**：提供一鍵複製按鈕，方便快速貼上至需要驗證的網站或服務。
-- 🔄 **自動與手動刷新**：
-  - **自動輪詢**：背景每 10 秒自動檢測並接收新郵件。
-  - **手動刷新**：隨時點擊刷新按鈕即時同步最新郵件。
-- 📖 **郵件詳情查看**：
-  - 完整顯示寄件者、收件者、主旨與發送時間。
-  - 支援查看內文詳情，自動標記已讀狀態。
-- 🗑️ **郵件管理**：可單獨刪除不需要的郵件。
-- 📜 **生成歷史紀錄**：自動保存本次運行中生成的臨時郵箱歷史，方便回溯。
-- 🎨 **現代化 GUI 介面**：清晰直覺的深/淺色視覺體驗，搭配狀態提示列與載入動畫。
+- ⚡ **一键生成临时邮箱**：自动获取可用域名并生成随机安全的临时电子邮件账号。
+- 📋 **快速复制地址**：提供一键复制按钮，方便快速粘贴至需要验证的网站或服务。
+- 🔄 **自动与手动刷新**：
+  - **自动轮询**：后台每 10 秒自动检测并接收新邮件。
+  - **手动刷新**：随时点击刷新按钮实时同步最新邮件。
+- 📖 **邮件详情查看**：
+  - 完整显示发件人、收件人、主题与发送时间。
+  - 支持查看正文详情，自动标记已读状态。
+- 🗑️ **邮件管理**：可单独删除不需要的邮件。
+- 📜 **生成历史纪录**：自动保存本次运行中生成的临时邮箱历史，方便回溯。
+- 🎨 **现代化 GUI 界面**：清晰直观的深/浅色视觉体验，搭配状态提示栏与加载动画。
 
 ---
 
 ## 🚀 使用指南 (Usage Guide)
 
-### 1. 生成臨時郵箱
-1. 啟動應用程式後，點擊頂部的 **「生成郵箱」**（或「新郵箱」）按鈕。
-2. 程式將自動向 Mail.tm 請求可用域名，並隨機創建一個臨時帳號。
-3. 生成成功後，頂部文字框會顯示您的臨時郵箱地址（如 `user123456a@domain.com`）。
+### 1. 生成临时邮箱
+1. 启动应用程序后，点击顶部的 **“生成邮箱”**（或“新邮箱”）按钮。
+2. 程序将自动向 Mail.tm 请求可用域名，并随机创建一个临时账号。
+3. 生成成功后，顶部文本框会显示您的临时邮箱地址（如 `user123456a@domain.com`）。
 
-### 2. 複製與使用郵箱
-1. 點擊郵箱地址旁邊的 **「複製」** 按鈕。
-2. 將複製的郵箱地址貼到您需要進行註冊或驗證的網站。
+### 2. 复制与使用邮箱
+1. 点击邮箱地址旁边的 **“复制”** 按钮。
+2. 将复制的邮箱地址粘贴到您需要进行注册或验证的网站。
 
-### 3. 接收與閱讀郵件
-1. 當目標網站發送驗證碼或郵件後，TempMailBox 每 10 秒會自動檢測新郵件。
-2. 收到郵件時，左側郵件列表會即時更新並顯示郵件數量提示。
-3. 點擊列表中的任意郵件，右側預覽區域將載入並顯示郵件的完整內容（寄件者、主題、時間、內文）。
+### 3. 接收与阅读邮件
+1. 当目标网站发送验证码或邮件后，TempMailBox 每 10 秒会自动检测新邮件。
+2. 收到邮件时，左侧邮件列表会实时更新并显示邮件数量提示。
+3. 点击列表中的任意邮件，右侧预览区域将加载并显示邮件的完整内容（发件人、主题、时间、正文）。
 
-### 4. 刷新與刪除
-- **刷新列表**：若想立刻檢查郵件，可點擊 **「刷新」** 按鈕。
-- **刪除郵件**：選中郵件後，點擊 **「刪除」** 按鈕即可將該封郵件從伺服器與列表中移除。
+### 4. 刷新与删除
+- **刷新列表**：若想立刻检查邮件，可点击 **“刷新”** 按钮。
+- **删除邮件**：选中邮件后，点击 **“删除”** 按钮即可将该封邮件从服务器与列表中移除。
 
 ---
 
-## 🛠️ 開發環境與建置 (Development & Build)
+## 🛠️ 开发环境与构建 (Development & Build)
 
-### 系統需求
-- **作業系統**：Windows 10 / Windows 11
-- **開發環境**：Visual Studio 2022 (包含 .NET 桌面開發工作負載) 或 Visual Studio Code
-- **運行時**：[.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) 或更高版本
+### 系统需求
+- **操作系统**：Windows 10 / Windows 11
+- **开发环境**：Visual Studio 2022 (包含 .NET 桌面开发工作负载) 或 Visual Studio Code
+- **运行时**：[.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) 或更高版本
 
-### 複製專案與運行
+### 克隆项目与运行
 
-1. **Clone 專案**
+1. **Clone 项目**
    ```bash
    git clone https://github.com/menxiansheng/TempMailBox.git
    cd TempMailBox
    ```
 
-2. **還原套件與編譯**
+2. **还原包与编译**
    ```bash
    dotnet restore
    dotnet build
    ```
 
-3. **運行應用程式**
+3. **运行应用程序**
    ```bash
    dotnet run
    ```
 
-4. **發布獨立執行檔 (Publish)**
+4. **发布独立可执行文件 (Publish)**
    ```bash
    dotnet publish -c Release -r win-x64 --self-contained false
    ```
 
 ---
 
-## 📂 專案架構 (Project Structure)
+## 📂 项目结构 (Project Structure)
 
 ```text
 TempMailBox/
-├── Models/                # 資料模型 (Account, Domain, Message, TokenResponse)
-├── Services/              # API 服務層 (MailTmService.cs)
-├── ViewModels/            # MVVM ViewModel 邏輯層 (MainViewModel.cs)
-├── Converters/            # WPF UI 轉換器 (BooleanConverters.cs)
-├── App.xaml               # 應用程式資源與樣式
-├── MainWindow.xaml        # 主視窗 UI 介面
-├── MainWindow.xaml.cs     # 主視窗 Code-behind
-├── TempMailBox.csproj     # .NET 專案檔
-├── README.md              # 專案說明文件
-└── LICENSE                # MIT 開源授權條款
+├── Models/                # 数据模型 (Account, Domain, Message, TokenResponse)
+├── Services/              # API 服务层 (MailTmService.cs)
+├── ViewModels/            # MVVM ViewModel 逻辑层 (MainViewModel.cs)
+├── Converters/            # WPF UI 转换器 (BooleanConverters.cs)
+├── App.xaml               # 应用程序资源与样式
+├── MainWindow.xaml        # 主窗口 UI 界面
+├── MainWindow.xaml.cs     # 主窗口 Code-behind
+├── TempMailBox.csproj     # .NET 项目文件
+├── README.md              # 项目说明文件
+└── LICENSE                # MIT 开源授权条款
 ```
 
 ---
 
-## 🌐 API 服務說明
+## 🌐 API 服务说明
 
-本專案使用 [Mail.tm](https://mail.tm/) 提供的免費 RESTful API 服務。主要端點包括：
-- `GET /domains`：獲取可用臨時郵箱域名
-- `POST /accounts`：創建臨時帳號
-- `POST /token`：取得 JWT 身份驗證 Token
-- `GET /messages`：獲取郵件清單
-- `GET /messages/{id}`：獲取指定郵件詳情
-- `DELETE /messages/{id}`：刪除指定郵件
+本项目使用 [Mail.tm](https://mail.tm/) 提供的免费 RESTful API 服务。主要端点包括：
+- `GET /domains`：获取可用临时邮箱域名
+- `POST /accounts`：创建临时账号
+- `POST /token`：取得 JWT 身份验证 Token
+- `GET /messages`：获取邮件清单
+- `GET /messages/{id}`：获取指定邮件详情
+- `DELETE /messages/{id}`：删除指定邮件
 
 ---
 
-## 📄 授權條款 (License)
+## 📄 授权条款 (License)
 
-本專案採用 **[MIT License](LICENSE)** 授權。您可以自由修改、散布與個人或商業使用。
+本项目采用 **[MIT License](LICENSE)** 授权。您可以自由修改、分发与个人或商业使用。
